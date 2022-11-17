@@ -2,7 +2,7 @@ nav {
 	margin: 27px auto 0;
 
 	position: relative;
-	width: 590px;
+	width: 320px;
 	height: 50px;
 	background-color: #34495e;
 	border-radius: 8px;
@@ -20,6 +20,11 @@ nav a {
 	text-align: center;
 	color: white;
 	cursor: pointer;
+}
+.title{
+	align-content: center;
+	text-align: center;
+
 }
 nav .animation {
 	position: absolute;
@@ -55,7 +60,7 @@ nav .start-about, a:nth-child(2):hover~.animation {
 	background-color: #e74c3c;
 }
 nav .start-blog, a:nth-child(3):hover~.animation {
-	width: 100px;
+	width: 110px;
 	left: 210px;
 	background-color: #3498db;
 }
