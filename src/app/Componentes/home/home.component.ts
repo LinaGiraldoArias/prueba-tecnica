@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/servicios/api.service';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +9,16 @@ import { ApiService } from 'src/app/servicios/api.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private apiService: ApiService) { }
+  constructor(public router: Router, private rutaActiva: ActivatedRoute, private apiService: ApiService) { }
   resultados: any = []
-
+  
   ngOnInit() {
+   
     this.consultarpersonajes()
+  }
+  description() {
+    // this.router.navigate(["/description", id]);
+    alert("id")
   }
   consultarpersonajes() {
     this.apiService.personajes().subscribe((rest) => {
