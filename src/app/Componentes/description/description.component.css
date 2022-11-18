@@ -13,6 +13,9 @@ body{
 }
 .description-character{
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 300px 300px 300px;
     width: 100%; 
+    align-items: center;
+  font-size: 15px;
+  gap: 18px;
 }
