@@ -1,0 +1,13 @@
+
+    <div *ngFor="let item of resultados.results" class="card">
+        <!-- <img src="item.image" alt="Avatar" style="width:100%"> -->
+        <img src="item.image" alt="Personaje">
+    
+        <div class="container">
+          <h4><b>{{item.name}}</b></h4>
+          <p>{{item.status}}</p>
+          <p>{{item.species}}</p>
+          <p>{{item.location.name}}</p>
+
+        </div>
+      </div>
