@@ -1,13 +1,19 @@
 
-    <div *ngFor="let item of resultados.results" class="card">
-        <!-- <img src="item.image" alt="Avatar" style="width:100%"> -->
-        <img src="item.image" alt="Personaje">
+    <body>
+        <main>
+            <div *ngFor="let item of resultados.results" class="image-container-personajes">
+                <!-- <img src="item.image" alt="Avatar" style="width:100%"> -->
+        
+                <img src = "item.image" alt="Personaje">
+                <div class="container">
+                  <h4><b>{{item.name}}</b></h4>
+                  <p>{{item.status}}</p>
+                  <p>{{item.species}}</p>
+                  <p>{{item.location.name}}</p>
+                  <a href="http://localhost:4200/description">Mas información</a>
+                </div>
+              </div>
+        </main>
+    </body>
     
-        <div class="container">
-          <h4><b>{{item.name}}</b></h4>
-          <p>{{item.status}}</p>
-          <p>{{item.species}}</p>
-          <p>{{item.location.name}}</p>
-
-        </div>
-      </div>
+    

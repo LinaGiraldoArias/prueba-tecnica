@@ -1,0 +1,18 @@
+/* 
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 18px;
+    align-content: center;
+} */
+body{
+    width: 800px;
+    margin: 0 auto; 
+    margin-top: 50px;
+
+}
+.description-character{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    width: 100%; 
+}
