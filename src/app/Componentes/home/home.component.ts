@@ -11,7 +11,6 @@ export class HomeComponent implements OnInit {
 
   constructor(public router: Router, private rutaActiva: ActivatedRoute, private apiService: ApiService) { }
   resultados: any = []
-  
   ngOnInit() {
    
     this.consultarpersonajes()
@@ -27,4 +26,7 @@ export class HomeComponent implements OnInit {
     })
   }
 
+  // function description(){
+  //   alert("Mas información");
+  // }
 }

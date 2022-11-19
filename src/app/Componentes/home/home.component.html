@@ -1,4 +1,3 @@
-
     <body>
         <main>
             <div *ngFor="let item of resultados.results" class="image-container-personajes">
@@ -11,8 +10,9 @@
                   <p>Status: {{item.status}}</p>
                   <p>Species: {{item.species}}</p>
                   <p>Location: {{item.location.name}}</p>
-                  <button onclick="description(1)">Mas información</button>
 
+                  <button onclick="description()">Mas información</button>
+                  
 
                   <!-- <button class="button button-clear icon ion-start button-assertive"
                           ng-click="toggleStar(item)"
